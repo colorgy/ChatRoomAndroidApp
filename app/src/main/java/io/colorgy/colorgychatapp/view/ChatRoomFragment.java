@@ -1,4 +1,4 @@
-package io.colorgy.colorgychatapp;
+package io.colorgy.colorgychatapp.view;
 
 import android.content.Context;
 import android.net.Uri;
@@ -7,6 +7,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import io.colorgy.colorgychatapp.R;
 
 public class ChatRoomFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
