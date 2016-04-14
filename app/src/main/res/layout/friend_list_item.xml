@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/friendImageView"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/friendNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="朋友名稱"/>
+        <TextView
+            android:id="@+id/friendQuestionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="今日問題"/>
+        <TextView
+            android:id="@+id/friendLastMessageTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="上次傳的訊息"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/timeStampTextView"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="1小時"/>
+</LinearLayout>
