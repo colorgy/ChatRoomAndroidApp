@@ -2,6 +2,8 @@ package io.colorgy.colorgychatapp.util;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.Socket;
 
 /**
@@ -19,7 +21,12 @@ public class ColorgySocket {
     private Runnable runnable = new Runnable() {
         @Override
         public void run() {
-            
+            try {
+                socket = new Socket(SERVER_HOST, SERVER_PORT);
+                bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     };
 

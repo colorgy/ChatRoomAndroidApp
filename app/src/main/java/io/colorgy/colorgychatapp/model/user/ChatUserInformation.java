@@ -41,5 +41,5 @@ public class ChatUserInformation {
         this.lastAnswer = json.getString("lastAnswer");
         this.avatarBlur2xUrl = json.getString("avatar_blur_2x_url");
         this.organizationCode = json.getString("organization_code");
-    }g
+    }
 }
