@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-</LinearLayout>
+    <ImageView
+        android:id="@+id/userProfileImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/startNewAdventureTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="展開一段冒險"/>
+    <TextView
+        android:id="@+id/hintTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="所有頭貼經過模糊處理，唯有越聊越清晰～"
+        android:layout_below="@+id/startNewAdventureTextView" />
+    <Button
+        android:id="@+id/uploadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="上傳照片"
+        android:layout_below="@id/hintTextView"/>
+</RelativeLayout>
