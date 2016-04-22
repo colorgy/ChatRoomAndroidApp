@@ -2,7 +2,9 @@
 
 ## Java部份
 
+分為model, view 以及 controller
 
+model部分請參考quip上的文件，基本上皆是參考文件而來，包括英文命名的部分
 
 ## `xml` layout部份
 
